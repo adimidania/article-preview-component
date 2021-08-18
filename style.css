@@ -73,7 +73,8 @@ main {
 .contact {
     width:100%;
     padding:27px;
-    padding-top: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -107,10 +108,53 @@ main {
 }
 
 .share-icon {
-    font-size: 29px;
+    font-size: 25px;
     color: hsl(214, 17%, 51%);
 }
 
+.contact-active {
+    width:100%;
+    background-color: hsl(217, 19%, 35%);
+    padding:27px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.contact-active p {
+    font-size: 18px;
+    color:hsl(210, 46%, 95%);
+    letter-spacing: 4.5px !important;
+    opacity:0.5;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-media {
+    width:26px;
+    height: auto;
+    margin: 0px 7px;
+}
+
+.contact-active .share-icon {
+    font-size: 25px;
+    color: white;
+    background-color: hsl(214, 17%, 51%);
+
+}
+
+.contact-active {
+    display: none;
+}
 /** TABLET VERSION **/
 
 @media screen and (min-width: 520px) {
@@ -167,6 +211,23 @@ main {
     .share-icon {
         font-size: 32px;
     }   
+    
+    .contact-active {
+        padding: 20px 42px;
+    }
+
+    .contact-active p {
+        font-size: 19px;
+    }
+    .social-media {
+        width:29px;
+        margin: 0px 10px;
+    }
+
+    .contact-active .share-icon {
+        font-size: 32px;
+
+    }
 }
 
 
@@ -261,7 +322,7 @@ main {
     .about {
         text-align: left;
         letter-spacing: 0.5px;
-        margin-right:160px;
+        margin-right:130px;
     }
 
     .share-icon {
